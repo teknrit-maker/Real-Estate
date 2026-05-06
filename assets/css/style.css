@@ -2505,7 +2505,7 @@ p {
 .about-page .page-hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(22, 50, 79, 0.76), rgba(22, 50, 79, 0.62));
+  background: linear-gradient(180deg, rgba(22, 50, 79, 0.84), rgba(22, 50, 79, 0.72));
 }
 
 .about-page .page-hero:before {
@@ -2513,14 +2513,46 @@ p {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(10, 24, 38, 0.58), rgba(10, 24, 38, 0.42)),
-    radial-gradient(circle at top left, rgba(127, 214, 247, 0.18), transparent 34%);
+    linear-gradient(180deg, rgba(8, 20, 31, 0.64), rgba(8, 20, 31, 0.48)),
+    radial-gradient(circle at top left, rgba(127, 214, 247, 0.12), transparent 34%);
   z-index: 1;
 }
 
 .about-page .page-hero .container {
   position: relative;
   z-index: 2;
+  padding-block: clamp(3.75rem, 8vw, 5.5rem);
+}
+
+.about-page .page-hero .eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  background: rgba(7, 17, 27, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 24px rgba(4, 11, 18, 0.24);
+  color: #fff;
+}
+
+.about-page .page-hero .display {
+  margin-bottom: 1rem;
+  line-height: 1.15;
+  text-shadow: 0 10px 28px rgba(4, 11, 18, 0.35);
+}
+
+.about-page .page-hero .lead {
+  max-width: 42rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.94);
+  text-shadow: 0 10px 24px rgba(4, 11, 18, 0.28);
+}
+
+.section-card-grid {
+  margin-top: 1.5rem;
+}
+
+.section-intro-spaced {
+  margin-bottom: 1.5rem;
 }
 
 .about-hero-video {
@@ -2530,6 +2562,8 @@ p {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: brightness(0.74) contrast(1.05) saturate(0.95);
+  transform: scale(1.02);
 }
 
 .properties-page .page-hero {
@@ -2551,6 +2585,32 @@ p {
 .properties-page .page-hero .container {
   position: relative;
   z-index: 2;
+  padding-block: clamp(3.75rem, 8vw, 5.5rem);
+}
+
+.properties-page .page-hero .eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.properties-page .page-hero .display {
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.properties-page .page-hero .lead {
+  max-width: 42rem;
+  line-height: 1.8;
+}
+
+.property-card.is-hidden {
+  display: none;
+}
+
+.property-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .properties-hero-video {
@@ -3027,6 +3087,25 @@ p {
 .agent-detail-page .page-hero .container {
   position: relative;
   z-index: 2;
+  padding-block: clamp(3.75rem, 8vw, 5.5rem);
+}
+
+.agents-page .page-hero .eyebrow,
+.agent-detail-page .page-hero .eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.agents-page .page-hero .display,
+.agent-detail-page .page-hero .display {
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.agents-page .page-hero .lead,
+.agent-detail-page .page-hero .lead {
+  max-width: 42rem;
+  line-height: 1.8;
 }
 
 .agent-detail-page .agent-detail-main h2 {
@@ -3114,13 +3193,22 @@ p {
 .contact-page .page-hero .container {
   position: relative;
   z-index: 2;
+  padding-block: clamp(3.75rem, 8vw, 5.5rem);
+}
+
+.contact-page .page-hero .eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .contact-page .page-hero .display {
+  margin-bottom: 1rem;
+  line-height: 1.15;
   animation-delay: 90ms;
 }
 
 .contact-page .page-hero .lead {
+  line-height: 1.8;
   animation-delay: 180ms;
 }
 
@@ -3738,8 +3826,20 @@ p {
   font-weight: 700;
 }
 
+.metric-trend-accent {
+  color: #6d44e0;
+}
+
 .metric-trend.is-down {
   color: #cb4f4f;
+}
+
+.dashboard-note-spaced {
+  margin-top: 0.45rem;
+}
+
+.dashboard-title-offset {
+  margin-top: 0.8rem;
 }
 
 .dashboard-analytics-grid,
